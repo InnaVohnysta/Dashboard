@@ -1,0 +1,42 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #B5B7C0;
+    }
+    &__pagination{
+        min-width: 271px;
+        min-height: 24px;
+        display: flex;
+        gap: 12px;
+    }
+}
+.button{
+    min-width: 24px;
+    min-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    color: #404B52;
+    &:hover,&-active{
+        background: #5932EA;
+        border: 1px solid #5932EA;
+        border-radius: 4px;
+        color: #FFFFFF;
+    }
+}
+@media (max-width:700px){
+    .footer{
+        flex-wrap:wrap-reverse;
+        &__pagination{
+            flex-wrap: wrap;
+        }
+    }
+
+}
