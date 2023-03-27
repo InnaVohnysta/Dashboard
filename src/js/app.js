@@ -2,10 +2,6 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper = new Swiper();
-
 let userPhoto = document.querySelector('.header__user-photo');
 let userName = document.querySelector('.header__user-name');
 let userJobTitle = document.querySelector('.header__user-job-title');
